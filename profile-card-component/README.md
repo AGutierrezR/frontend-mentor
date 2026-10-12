@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/profile-card-component)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/profile-card-component/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/profile-card-component)
+- Live Site URL: [Live Site](https://cool-buttercream-e19515.netlify.app/)
 
 ### Built with
 

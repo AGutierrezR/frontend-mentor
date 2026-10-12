@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/social-proof-section)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/social-proof-section/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/social-proof-section)
+- Live Site URL: [Live Site](https://taupe-sherbet-bd9049.netlify.app/)
 
 ### Built with
 

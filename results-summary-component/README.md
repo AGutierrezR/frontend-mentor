@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/results-summary-component/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/results-summary-component)
 - Live Site URL: [Add live site URL here](https://friendly-selkie-2a41ac.netlify.app/)
 
 ### Built with

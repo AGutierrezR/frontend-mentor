@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/NFT-preview-card-component-tailwind)
-- Live Site URL: [Add live site URL here](https://agutierrezr.github.io/NFT-preview-card-component-tailwind/)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/NFT-preview-card-component)
+- Live Site URL: [Add live site URL here](https://taupe-toffee-a2716d.netlify.app/)
 
 ### Built with
 

@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/stats-preview-card-component)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/stats-preview-card-component/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/stats-preview-card-component)
+- Live Site URL: [Live Site](https://legendary-bavarois-d40a9a.netlify.app/)
 
 ## My process
 

@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/single-price-grid-component/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/single-price-grid-component)
 - Live Site URL: [Add live site URL here](https://cheery-basbousa-0a57f4.netlify.app)
 
 ### Built with

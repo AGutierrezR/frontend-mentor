@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/news-homepage-solution/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/news-homepage-solution)
 - Live Site URL: [Add live site URL here](https://comfy-jalebi-2296d3.netlify.app/)
 
 ### Built with

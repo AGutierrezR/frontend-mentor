@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/intro-component-with-signup-form/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/intro-component-with-signup-form)
 - Live Site URL: [Add live site URL here](https://merry-douhua-2ac6be.netlify.app/)
 
 ### Built with
@@ -108,7 +108,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/results-summary-component/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/intro-component-with-signup-form)
 - Live Site URL: [Add live site URL here](https://friendly-selkie-2a41ac.netlify.app/)
 
 ### Built with

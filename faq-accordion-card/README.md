@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/faq-accordion-card)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/faq-accordion-card/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/faq-accordion-card)
+- Live Site URL: [Live Site](https://bright-bavarois-ad72e9.netlify.app/)
 
 ### Built with
 

@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/faq-accordion)
-- Live Site URL: [Add live site URL here](https://courageous-granita-3cf156.netlify.app/)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/blog-preview-card)
+- Live Site URL: [Add live site URL here](https://bucolic-klepon-d3a732.netlify.app/)
 
 ### Built with
 

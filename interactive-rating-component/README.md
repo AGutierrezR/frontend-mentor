@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/interactive-rating-component/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/interactive-rating-component)
 - Live Site URL: [Add live site URL here](https://legendary-starburst-491937.netlify.app/)
 
 ### Built with

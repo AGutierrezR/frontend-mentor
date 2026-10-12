@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://github.com/AGutierrezR/calculator-app)
+- Solution URL: [here](https://github.com/AGutierrezR/frontend-mentor/tree/main/calculator-app)
 - Live Site URL: [here](https://resilient-peony-bec161.netlify.app/)
 
 ### Built with

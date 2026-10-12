@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/3-column-preview-card-component)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/3-column-preview-card-component/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/3-column-preview-card-component)
+- Live Site URL: [Live Site](https://willowy-bonbon-a82c86.netlify.app/)
 
 ## My process
 

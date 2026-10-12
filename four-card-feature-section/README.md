@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/four-card-feature-section/)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/four-card-feature-section/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/frontend-mentor/tree/main/four-card-feature-section)
+- Live Site URL: [Live Site](https://gorgeous-dusk-7affdf.netlify.app/)
 
 ### Built with
 

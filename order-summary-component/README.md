@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/order-summary-component/tree/tailwind)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/order-summary-component)
 - Live Site URL: [Add live site URL here](https://melodic-pixie-d2565a.netlify.app/)
 
 ### Built with

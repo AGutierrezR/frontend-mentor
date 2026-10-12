@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/faq-accordion)
+- Solution URL: [Add solution URL here](https://github.com/AGutierrezR/frontend-mentor/tree/main/faq-accordion)
 - Live Site URL: [Add live site URL here](https://courageous-granita-3cf156.netlify.app/)
 
 ### Built with

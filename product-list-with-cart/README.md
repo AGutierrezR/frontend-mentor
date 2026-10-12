@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://github.com/AGutierrezR/product-list-with-cart)
+- Solution URL: [here](https://github.com/AGutierrezR/frontend-mentor/tree/main/product-list-with-cart)
 - Live Site URL: [here](https://peppy-gecko-c8a2ea.netlify.app/)
 
 ### Built with
