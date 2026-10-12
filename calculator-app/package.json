@@ -1,0 +1,34 @@
+{
+  "name": "calculator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@open-wc/testing-helpers": "^1.1.5",
+    "@vitest/ui": "^0.34.7",
+    "autoprefixer": "^10.4.16",
+    "happy-dom": "^14.7.1",
+    "postcss": "^8.4.31",
+    "prettier-plugin-css-order": "^2.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "sinon": "^17.0.1",
+    "slugify": "^1.6.6",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.5.0",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
+  }
+}
