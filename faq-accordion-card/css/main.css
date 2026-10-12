@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  --clr-darkerdesaturatedblue: #1d1e35;
+  --clr-softred: #f47c57;
+  --clr-softviolet: #af67e9;
+  --clr-softblue: #6565e7;
+  --clr-darkergrayishblue: #4a4b5e;
+  --clr-darkgrayishblue: #787887;
+  --clr-lightgrayishblue: #e7e7e9;
+  --clr-white: white;
+  /* Fonts Families */
+  --ff-primary: "Kumbh Sans", sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 2rem;
+  --fs-body: 0.75rem;
+  /* Fonts Weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-darkerdesaturatedblue);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-black);
+  margin-bottom: 0.565em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(var(--clr-softviolet), var(--clr-softblue));
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    max-height: 200px;
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+.faq-card {
+  width: 100%;
+  max-width: 325px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--clr-white);
+  border-radius: 20px;
+}
+.faq-card__title {
+  text-align: center;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  margin-bottom: 28px;
+}
+.faq-card__illustration {
+  position: relative;
+  height: 110px;
+  margin-bottom: 18px;
+}
+.faq-card__illustration-box {
+  display: none;
+}
+.faq-card__illustration-image-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.faq-card__illustration-image-container::after {
+  content: url(../images/bg-pattern-mobile.svg);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.faq-card__illustration-image {
+  display: block;
+  position: absolute;
+  top: -98%;
+  left: 50%;
+  transform: translateX(-55%);
+}
+.faq-card__content {
+  padding: 0 25px 40px;
+}
+@media only screen and (min-width: 1440px) {
+  .faq-card {
+    display: grid;
+    grid-template-columns: 476px 1fr;
+    padding: 0;
+    max-width: 920px;
+  }
+  .faq-card__title {
+    text-align: left;
+  }
+  .faq-card__illustration {
+    height: 100%;
+    margin-bottom: 0;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 118% 66%;
+  }
+  .faq-card__illustration-box {
+    position: absolute;
+    display: block;
+    left: -92px;
+    top: 50%;
+    transform: translateY(-25%);
+    z-index: 1;
+  }
+  .faq-card__illustration-image-container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .faq-card__illustration-image-container::after {
+    content: unset;
+    position: unset;
+  }
+  .faq-card__illustration-image {
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .faq-card__content {
+    padding: 65px 96px 65px 0;
+  }
+}
+
+.accordion__trigger {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--clr-darkerdesaturatedblue);
+  position: relative;
+  line-height: 1.65;
+  width: 100%;
+  padding: 10px 0;
+}
+.accordion__title {
+  font-family: var(--ff-primary);
+  font-size: 0.8125em;
+  color: var(--clr-darkergrayishblue);
+}
+.accordion__icon {
+  content: url(../images/icon-arrow-down.svg);
+  transition: transform 0.4s ease;
+}
+.accordion__body {
+  color: var(--clr-darkgrayishblue);
+  margin-bottom: 10px;
+  max-width: 38ch;
+  animation: slideDown 0.5s forwards;
+}
+.accordion__body--closing {
+  animation: slideUp 0.5s forwards;
+}
+.accordion__trigger:hover .accordion__title {
+  color: var(--clr-softred);
+  transition: 0.4s ease;
+}
+.accordion__trigger[aria-expanded=true] .accordion__title {
+  font-weight: var(--fw-bold);
+}
+.accordion__trigger[aria-expanded=true] .accordion__icon {
+  transform: rotate(-180deg);
+}
+@media only screen and (min-width: 1440px) {
+  .accordion__trigger {
+    font-size: 1.1rem;
+    padding-right: 12px;
+  }
+  .accordion__body {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-lightgrayishblue);
+  border: 0;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=main.css.map */
