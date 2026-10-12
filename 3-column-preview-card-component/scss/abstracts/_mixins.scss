@@ -1,0 +1,53 @@
+@use 'breakpoints' as *;
+@use 'colors' as *;
+
+@mixin media-breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @media only screen and (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin primary-color-modifiers() {
+  @each $color, $_ in map-get($colors, primary) {
+    &--#{$color} {
+      color: var(--clr-#{$color});
+    }
+  }
+}
+
+@mixin primary-background-modifiers() {
+  @each $color, $_ in map-get($colors, primary) {
+    &--#{$color} {
+      background-color: var(--clr-#{$color});
+    }
+  }
+}
+
+@mixin pseudo(
+  $loc: before,
+  $content: '',
+  $pos: absolute,
+  $top: 0,
+  $bottom: 0,
+  $left: 0,
+  $right: 0
+) {
+  position: relative;
+
+  &::#{$loc} {
+    content: $content;
+    position: $pos;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    @content;
+  }
+}
