@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --clr-red: #ea5353;
+  --clr-cyan: #45d3d3;
+  --clr-orange: #fcaf4a;
+  --clr-blue: #549ef2;
+  --clr-white: white;
+  --clr-very-dark-blue: #4c4e61;
+  --clr-grayish-blue: #a3a5ae;
+  --clr-very-light-gray: #fafafa;
+  /* Fonts Families */
+  --ff-primary: 'Poppins', sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 2rem;
+  --fs-body: 0.9375rem;
+  /* Fonts Weight */
+  --fw-extra-thin: 200;
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+}
+
+body {
+  background-color: var(--clr-very-light-gray);
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-grayish-blue);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    max-height: 200px;
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features {
+  padding: 5.25rem 1.75rem;
+}
+.features__title {
+  text-align: center;
+  font-weight: var(--fw-extra-thin);
+  color: var(--clr-very-dark-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.features__title b {
+  display: block;
+  font-weight: var(--fw-semi-bold);
+}
+.features__lead {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55ch;
+}
+.features__list {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features__card {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1.75rem;
+  box-shadow: 0px 15px 30px -11px rgba(131, 167, 210, 0.5);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+.features__card-title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-very-dark-blue);
+  margin-bottom: 0.5rem;
+}
+.features__card-body {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.features__card-footer {
+  text-align: right;
+}
+.features__card::before {
+  content: '';
+  background: var(--clr-grayish-blue);
+  height: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.features__card--supervisor::before {
+  background: var(--clr-cyan);
+}
+.features__card--team-builder::before {
+  background: var(--clr-red);
+}
+.features__card--karma::before {
+  background: var(--clr-orange);
+}
+.features__card--calculator::before {
+  background: var(--clr-blue);
+}
+@media only screen and (min-width: 375px) {
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .features__title {
+    font-size: 2.25rem;
+  }
+  .features__list {
+    max-width: 1110px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.875rem;
+  }
+  .features__card-body {
+    max-width: 36ch;
+  }
+  .features__card--supervisor {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .features__card--team-builder {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .features__card--karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .features__card--calculator {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}
+
+.attribution {
+  display: none;
+  position: fixed;
+  height: 20px;
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: #4c4e61;
+}
+@media only screen and (min-width: 1440px) {
+  .attribution {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
