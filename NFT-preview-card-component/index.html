@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div
+        class="mx-auto max-w-[327px] rounded-xl bg-blue-600 p-6 text-blue-300 shadow lg:max-w-[350px] lg:pb-8"
+      >
+        <div class="relative mb-6">
+          <img class="rounded-lg" src="images/image-equilibrium.jpg" alt="" />
+          <a href="#" aria-label="link to equilibrium">
+            <div
+              class="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-cyan bg-opacity-50 bg-[url('../../images/icon-view.svg')] bg-center bg-no-repeat opacity-0 transition-opacity duration-700 hover:cursor-pointer hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+        <h1
+          class="mb-3 text-xl font-semibold text-white transition-colors duration-700 hover:cursor-pointer hover:text-cyan lg:tracking-[0.1px]"
+        >
+          Equilibrium #3429
+        </h1>
+        <p class="mb-4 text-base lg:mb-5 lg:tracking-normal">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div
+          class="flex justify-between text-base tracking-[0.3px] lg:text-[16px]"
+        >
+          <div
+            class="flex items-center font-semibold tracking-tighter text-cyan lg:tracking-[inherit]"
+          >
+            <img class="mr-[6px]" src="images/icon-ethereum.svg" alt="#" />
+            0.041 ETH
+          </div>
+          <div class="flex items-center">
+            <img class="mr-[6px]" src="images/icon-clock.svg" alt="#" /> 3 days
+            left
+          </div>
+        </div>
+        <hr class="mt-3 mb-4 border-blue-500 lg:mt-[22px]" />
+        <footer class="flex items-center font-light">
+          <img
+            class="mr-4 w-[32px] rounded-full border border-white"
+            src="./images/image-avatar.png"
+            alt=""
+          />
+          <p class="lg:tracking-[0.00625em]">
+            Creation of
+            <span
+              class="text-white transition-colors duration-700 hover:cursor-pointer hover:text-cyan"
+              >Jules Wyvern</span
+            >
+          </p>
+        </footer>
+      </div>
+    </main>
+
+    <footer
+      class="fixed bottom-0 left-1/2 h-[20px] w-screen -translate-x-1/2 text-center text-sm text-white"
+    >
+      Challenge by
+      <a
+        class="underline"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="underline" href="https://github.com/AGutierrezR"
+        >Andres Gutierrez</a
+      >.
+    </footer>
+  </body>
+</html>
