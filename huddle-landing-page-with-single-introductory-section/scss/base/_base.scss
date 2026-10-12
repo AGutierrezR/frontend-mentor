@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+body {
+  position: relative;
+
+  background-color: var(--clr-violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+
+  @include media-breakpoint('desktop') {
+    background-image: url(../images/bg-desktop.svg);
+  }
+}

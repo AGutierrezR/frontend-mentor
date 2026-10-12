@@ -1,0 +1,20 @@
+@use '../abstracts/index.scss' as *;
+
+.btn {
+  --fs-btn: 0.75rem;
+
+  display: inline-block;
+  font-size: var(--fs-small);
+  font-family: var(--ff-heading);
+  text-decoration: none;
+  padding: 0.75rem 4.75rem;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.27);
+
+  @include media-breakpoint('desktop') {
+    --fs-btn: 1.125rem;
+
+    padding: 1rem 4.175rem;
+    border-radius: 28px;
+  }
+}

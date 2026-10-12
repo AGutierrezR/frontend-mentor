@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --clr-violet: #674baf;
+  --clr-soft-magenta: #e882e8;
+  --clr-white: white;
+  /* Fonts Families */
+  --ff-heading: 'Poppins', sans-serif;
+  --ff-body: 'Open Sans', sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 1.5rem;
+  --fs-body: 1rem;
+  /* Fonts Weight */
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+}
+@media only screen and (min-width: 1440px) {
+  :root {
+    --fs-title: 2.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  position: relative;
+  background-color: var(--clr-violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+}
+
+h1 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-title);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header {
+  padding: 32px;
+  width: 100%;
+  max-width: 1410px;
+  margin: 0 auto;
+}
+.site-header > img {
+  height: 32px;
+}
+@media only screen and (min-width: 1440px) {
+  .site-header {
+    padding: 56px;
+  }
+  .site-header > img {
+    height: 52px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2.25rem;
+}
+.hero__image {
+  text-align: center;
+  margin-bottom: 3.375rem;
+}
+.hero__content {
+  text-align: center;
+}
+.hero__title {
+  margin-bottom: 1rem;
+}
+.hero__lead {
+  line-height: 1.46;
+  margin-bottom: 1.375rem;
+}
+.hero__cta {
+  color: var(--clr-violet);
+  background-color: var(--clr-white);
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 52ch;
+    padding: 12px 72px 0;
+    gap: 52px;
+  }
+  .hero__image {
+    margin: 0;
+  }
+  .hero__content {
+    text-align: left;
+    padding-top: 2.625rem;
+  }
+  .hero__title {
+    margin-bottom: 20px;
+  }
+  .hero__lead {
+    max-width: 50ch;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  gap: 10px;
+}
+.social-links a {
+  --size: 28px;
+  color: var(--clr-white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+  height: var(--size);
+  width: var(--size);
+}
+.social-links svg {
+  height: var(--fs-body);
+}
+@media only screen and (min-width: 1440px) {
+  .social-links {
+    justify-content: end;
+    padding: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    gap: 16px;
+  }
+  .social-links a {
+    --size: 40px;
+  }
+  .social-links svg {
+    height: var(--fs-body);
+  }
+}
+
+.btn {
+  --fs-btn: 0.75rem;
+  display: inline-block;
+  font-size: var(--fs-small);
+  font-family: var(--ff-heading);
+  text-decoration: none;
+  padding: 0.75rem 4.75rem;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.27);
+}
+@media only screen and (min-width: 1440px) {
+  .btn {
+    --fs-btn: 1.125rem;
+    padding: 1rem 4.175rem;
+    border-radius: 28px;
+  }
+}
+
+.attribution {
+  height: 20px;
+  font-size: 0.6875rem;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

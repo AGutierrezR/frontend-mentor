@@ -1,0 +1,19 @@
+@use '../abstracts/index.scss' as *;
+
+.site-header {
+  padding: 32px;
+  width: 100%;
+  max-width: 1410px;
+  margin: 0 auto;
+  > img {
+    height: 32px;
+  }
+
+  @include media-breakpoint('desktop') {
+    padding: 56px;
+
+    > img {
+      height: 52px;
+    }
+  }
+}

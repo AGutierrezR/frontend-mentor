@@ -1,0 +1,43 @@
+@use '../abstracts/index.scss' as *;
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  gap: 10px;
+
+  a {
+    --size: 28px;
+    color: var(--clr-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    height: var(--size);
+    width: var(--size);
+  }
+
+  svg {
+    height: var(--fs-body);
+  }
+
+  @include media-breakpoint('desktop') {
+    justify-content: end;
+    padding: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    gap: 16px;
+
+    a {
+      --size: 40px;
+    }
+
+    svg {
+      height: var(--fs-body);
+    }
+  }
+}

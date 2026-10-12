@@ -1,0 +1,55 @@
+@use '../abstracts/index.scss' as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2.25rem;
+
+  &__image {
+    text-align: center;
+    margin-bottom: 3.375rem;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__lead {
+    line-height: 1.46;
+    margin-bottom: 1.375rem;
+  }
+
+  &__cta {
+    color: var(--clr-violet);
+    background-color: var(--clr-white);
+  }
+
+  @include media-breakpoint('desktop') {
+    display: grid;
+    grid-template-columns: 1fr 52ch;
+    padding: 12px 72px 0;
+    gap: 52px;
+
+    &__image {
+      margin: 0;
+    }
+
+    &__content {
+      text-align: left;
+      padding-top: 2.625rem;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__lead {
+      max-width: 50ch;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
