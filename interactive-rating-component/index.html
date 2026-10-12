@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/alpine.js"></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col justify-center bg-very-dark-blue font-body text-base text-white"
+  >
+    <main
+      x-data="{
+      rates: [1,2,3,4,5],
+      currentRate: null,
+      submitted:false
+    }"
+      class="flex items-center justify-center p-6"
+    >
+      <div
+        class="min-w-[327px] max-w-sm rounded-xl bg-dark-blue/50 px-6 py-7 lg:min-w-[410px] lg:rounded-3xl lg:px-8 lg:py-9"
+        x-show="!submitted"
+      >
+        <div
+          class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-medium-grey/20 lg:mb-8 lg:h-11 lg:w-11"
+        >
+          <img class="h-3 lg:h-4" src="assets/images/icon-star.svg" alt="" />
+        </div>
+
+        <h1 class="mb-2 text-2xl font-bold lg:mb-3 lg:text-[28px]">
+          How did we do?
+        </h1>
+        <p class="mb-6 text-[14px] text-light-grey lg:mb-7 lg:text-base">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form @submit.prevent="submitted = true">
+          <fieldset>
+            <div class="mb-6 grid grid-cols-5 gap-3 lg:mb-7">
+              <template x-for="rate in rates">
+                <label>
+                  <input
+                    type="radio"
+                    name="score"
+                    :value="rate"
+                    class="peer sr-only"
+                    @click="currentRate = rate"
+                  />
+                  <span
+                    class="leading-0 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-medium-grey/20 text-light-grey peer-checked:bg-orange peer-checked:text-white lg:h-13 lg:w-13"
+                    x-text="rate"
+                  ></span>
+                </label>
+              </template>
+            </div>
+          </fieldset>
+          <button
+            class="block w-full rounded-full bg-orange p-3 text-center font-bold uppercase tracking-wider"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div
+        class="min-w-[327px] max-w-sm rounded-xl bg-dark-blue/50 px-6 py-10 lg:min-w-[410px] lg:rounded-3xl lg:px-9 lg:py-12"
+        x-show="submitted"
+      >
+        <div class="mb-5 flex justify-center lg:mb-9">
+          <img
+            class="h-[100px]"
+            src="assets/images/illustration-thank-you.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="mx-auto mb-7 w-fit rounded-full bg-medium-grey/20 px-3 py-1 text-center text-[14px] text-orange lg:px-5 lg:text-[16px]"
+        >
+          You selected <span x-text="currentRate"></span> out of 5
+        </div>
+        <h1 class="mb-3 text-center text-2xl font-bold lg:text-3xl">
+          Thank you!
+        </h1>
+
+        <p class="text-center text-[14px] text-light-grey lg:text-base">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+
+    <footer
+      class="text-dark-500 fixed bottom-1 w-screen px-2 text-center text-sm md:left-1/2 md:mt-0 md:-translate-x-1/2"
+    >
+      Challenge by
+      <a
+        class="underline"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="underline" href="https://github.com/AGutierrezR"
+        >Andres Gutierrez</a
+      >.
+    </footer>
+  </body>
+</html>
