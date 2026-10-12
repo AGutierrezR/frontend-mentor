@@ -1,0 +1,12 @@
+.intro-banner {
+  background-image: url('/images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+}
+
+@media screen(md) {
+  .intro-banner {
+    background-image: url('/images/bg-header-desktop.png');
+  }
+}

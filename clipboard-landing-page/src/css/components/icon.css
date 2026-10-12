@@ -1,0 +1,38 @@
+.sprite {
+  display: none;
+}
+
+.icon {
+  --_icon-width: var(--icon-width, auto);
+  --_icon-height: var(--icon-height, 3rem);
+
+  height: var(--_icon-height);
+  width: var(--_icon-width);
+}
+
+.icon--logo {
+  --icon-width: 125px;
+  --icon-height: 125px;
+}
+
+.icon--blacklist {
+  --icon-width: 3rem;
+}
+
+.icon--text {
+  --icon-width: 2.2rem;
+}
+
+.icon--preview {
+  --icon-width: 3rem;
+}
+
+.icon--logo-footer {
+  --icon-width: 55px;
+  --icon-height: 55px;
+}
+
+.icon--social {
+  --icon-width: 1.5rem;
+  --icon-height: 1.5rem;
+}

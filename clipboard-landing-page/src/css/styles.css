@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+
+@import './global/reset.css';
+@import './global/fonts.css';
+
+@import 'tailwindcss/components';
+
+@import './global/variables.css';
+@import './global/global-styles.css';
+
+@import './blocks/intro-banner.css';
+@import './blocks/snippets.css';
+@import './blocks/footer.css';
+
+@import './components/actions.css';
+@import './components/button.css';
+@import './components/icon.css';
+@import './components/navigation.css';
+@import './components/socials.css';
+@import './components/workflow.css';
+
+@import './compositions/cluster.css';
+@import './compositions/cover.css';
+@import './compositions/grid.css';
+@import './compositions/repel.css';
+@import './compositions/switcher.css';
+
+@import './utilities/center.css';
+@import './utilities/flow.css';
+@import './utilities/flow.css';
+@import './utilities/region.css';
+@import './utilities/stack.css';
+@import './utilities/title.css';
+@import './utilities/wrapper.css';
+
+@import 'tailwindcss/utilities';

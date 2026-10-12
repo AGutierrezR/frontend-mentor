@@ -1,0 +1,10 @@
+/* .snippets {
+  --region-space: var(--space-3xl-2xl) 5rem;
+} */
+
+.snippets .auto-grid {
+  --gutter: 3.875rem;
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 20.05rem);
+}
+
