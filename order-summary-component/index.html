@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body
+    class="flex min-h-[100vh] flex-col items-center justify-center bg-pale-blue bg-[url('../../images/pattern-background-mobile.svg')] bg-[size:100%] bg-no-repeat xl:bg-[url('../../images/pattern-background-desktop.svg')]"
+  >
+    <main class="w-full max-w-[327px] py-10 lg:p-0 xl:max-w-[440px]">
+      <div class="overflow-hidden rounded-3xl shadow-lg">
+        <img src="./images/illustration-hero.svg" alt="" />
+        <div class="bg-white p-6 xl:px-10 xl:py-11">
+          <h1
+            class="mb-5 text-center text-xl font-black text-dark-blue xl:text-3xl"
+          >
+            Order Summary
+          </h1>
+          <p
+            class="mx-auto mb-6 max-w-[25ch] text-center text-sm font-medium text-desaturated-blue xl:max-w-[30ch] xl:text-base"
+          >
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div
+            class="mb-5 flex items-center rounded-lg bg-very-pale-blue p-4 xl:mb-7 xl:p-5"
+          >
+            <img class="mr-4" src="./images/icon-music.svg" alt="" />
+            <div
+              class="flex flex-col text-sm text-desaturated-blue xl:text-base"
+            >
+              <span class="font-black text-dark-blue">Annual Plan</span>
+              $59.99/year
+            </div>
+            <button
+              class="ml-auto text-sm font-bold text-bright-blue underline hover:opacity-75"
+            >
+              Change
+            </button>
+          </div>
+          <button
+            class="mb-5 block w-full rounded-lg bg-bright-blue py-3 text-center text-sm font-bold text-white shadow-lg hover:bg-opacity-75 xl:text-base"
+          >
+            Proceed to Payment
+          </button>
+          <button
+            class="mx-auto block py-3 text-center text-sm font-bold text-desaturated-blue hover:text-dark-blue xl:text-base"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-dark-500 h-[20px] w-screen text-center text-xs lg:fixed lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2"
+    >
+      Challenge by
+      <a
+        class="underline"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="underline" href="https://github.com/AGutierrezR"
+        >Andres Gutierrez</a
+      >.
+    </footer>
+  </body>
+</html>
